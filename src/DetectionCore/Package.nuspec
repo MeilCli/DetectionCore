@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DetectionCore</id>
+    <version>1.0.0</version>
+    <authors>meilcli</authors>
+    <owners>meilcli</owners>
+    <licenseUrl>https://github.com/MeilCli/DetectionCore/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/MeilCli/DetectionCore</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A browser detection library for .NET Core</description>
+    <releaseNotes>first release</releaseNotes>
+    <copyright>Copyright 2016 meil</copyright>
+    <tags>BrowserDetection</tags>
+    <dependencies>
+      <group targetFramework="netstandard1.6">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard1.6\DetectionCore.dll" target="lib\netstandard1.6" />
+    <file src="bin\Release\netstandard1.6\DetectionCore.pdb" target="lib\netstandard1.6" />
+    <file src="bin\Release\netstandard1.6\DetectionCore.deps.json" target="lib\netstandard1.6" />
+  </files>
+</package>

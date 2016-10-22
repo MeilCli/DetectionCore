@@ -30,6 +30,14 @@ A browser detect library for .NET Core(.NET Standard Library1.6)
 - iOS(each version,over iOS7.0)
 - Android(each version,over Android4.0)
 
+## NuGet
+
+[NuGet URL](https://www.nuget.org/packages/DetectionCore/)
+
+~~~
+Install-Package DetectionCore
+~~~
+
 ## Usage
 ~~~
 using DetectionCore;
