@@ -1,5 +1,5 @@
 # DetectionCore
-
+![](https://meilcli.visualstudio.com/_apis/public/build/definitions/aa83b402-b78d-4038-a10b-93b8509336e0/2/badge)  
 A browser detect library for .NET Core(.NET Standard Library1.6)
 
 ## Detect
