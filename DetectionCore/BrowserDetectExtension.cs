@@ -6,12 +6,12 @@ namespace DetectionCore
     {
         public static string Browser(this string userAgent)
         {
-            string ie = userAgent.detectIE();
+            string? ie = userAgent.detectIE();
             if (ie != null)
             {
                 return ie;
             }
-            string other = userAgent.detectOther();
+            string? other = userAgent.detectOther();
             if (other != null)
             {
                 return other;
@@ -19,7 +19,7 @@ namespace DetectionCore
             return CBrowser.Unknown;
         }
 
-        private static string detectIE(this string userAgent)
+        private static string? detectIE(this string userAgent)
         {
             if (userAgent.Contains("MSIE 8"))
             {
@@ -44,7 +44,7 @@ namespace DetectionCore
             return null;
         }
 
-        private static string detectOther(this string userAgent)
+        private static string? detectOther(this string userAgent)
         {
             if (userAgent.Contains("Firefox"))
             {

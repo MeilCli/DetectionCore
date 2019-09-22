@@ -6,32 +6,32 @@ namespace DetectionCore
     {
         public static string Platform(this string userAgent)
         {
-            string windows = userAgent.detectWindows();
+            string? windows = userAgent.detectWindows();
             if (windows != null)
             {
                 return windows;
             }
-            string mac = userAgent.detectMac();
+            string? mac = userAgent.detectMac();
             if (mac != null)
             {
                 return mac;
             }
-            string linux = userAgent.detectLinux();
+            string? linux = userAgent.detectLinux();
             if (linux != null)
             {
                 return linux;
             }
-            string game = userAgent.detectGame();
+            string? game = userAgent.detectGame();
             if (game != null)
             {
                 return game;
             }
-            string ios = userAgent.detectIOS();
+            string? ios = userAgent.detectIOS();
             if (ios != null)
             {
                 return ios;
             }
-            string android = userAgent.detectAndroid();
+            string? android = userAgent.detectAndroid();
             if (android != null)
             {
                 return android;
@@ -39,7 +39,7 @@ namespace DetectionCore
             return CPlatform.Unknown;
         }
 
-        private static string detectWindows(this string userAgent)
+        private static string? detectWindows(this string userAgent)
         {
             if (userAgent.Contains("Windows NT 5"))
             {
@@ -72,7 +72,7 @@ namespace DetectionCore
             return null;
         }
 
-        private static string detectMac(this string userAgent)
+        private static string? detectMac(this string userAgent)
         {
             if (userAgent.Contains("Mac OS X 10_5") || userAgent.Contains("Mac OS X 10.5"))
             {
@@ -113,7 +113,7 @@ namespace DetectionCore
             return null;
         }
 
-        private static string detectLinux(this string userAgent)
+        private static string? detectLinux(this string userAgent)
         {
             if (userAgent.Contains("CrOS"))
             {
@@ -154,7 +154,7 @@ namespace DetectionCore
             return null;
         }
 
-        private static string detectGame(this string userAgent)
+        private static string? detectGame(this string userAgent)
         {
             if (userAgent.Contains("Nintendo Wii"))
             {
@@ -175,7 +175,7 @@ namespace DetectionCore
             return null;
         }
 
-        private static string detectIOS(this string userAgent)
+        private static string? detectIOS(this string userAgent)
         {
             if (userAgent.Contains("iPhone") == false && userAgent.Contains("iPad") == false)
             {
@@ -232,7 +232,7 @@ namespace DetectionCore
             return CPlatform.IOS;
         }
 
-        private static string detectAndroid(this string userAgent)
+        private static string? detectAndroid(this string userAgent)
         {
             if (userAgent.Contains("Android 4.0") || userAgent.Contains("android 4.0"))
             {
