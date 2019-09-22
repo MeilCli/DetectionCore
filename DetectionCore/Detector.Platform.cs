@@ -43,9 +43,8 @@ namespace DetectionCore
                 platformType = PlatformType.Windows;
                 platformDetail = PlatformConstant.Windows;
 
-                if (userAgent.Contains("Windows NT 5"))
+                if (userAgent.Contains("Windows NT 5.2") || userAgent.Contains("Windows NT 5.1"))
                 {
-                    // ToDo: Add Platform
                     platformDetail = PlatformConstant.WindowsXP;
                 }
                 if (userAgent.Contains("Windows NT 6.0"))
