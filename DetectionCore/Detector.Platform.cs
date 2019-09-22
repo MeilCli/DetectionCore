@@ -115,7 +115,18 @@ namespace DetectionCore
                 {
                     platformDetail = PlatformConstant.MacOS10_12;
                 }
-                // ToDo: Add Platform
+                if (userAgent.Contains("Mac OS X 10_13") || userAgent.Contains("Mac OS X 10.13"))
+                {
+                    platformDetail = PlatformConstant.MacOS10_13;
+                }
+                if (userAgent.Contains("Mac OS X 10_14") || userAgent.Contains("Mac OS X 10.14"))
+                {
+                    platformDetail = PlatformConstant.MacOS10_14;
+                }
+                if (userAgent.Contains("Mac OS X 10_15") || userAgent.Contains("Mac OS X 10.15"))
+                {
+                    platformDetail = PlatformConstant.MacOS10_15;
+                }
                 return true;
             }
 

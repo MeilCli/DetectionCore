@@ -40,6 +40,9 @@
         public const string MacOS10_10 = "OS X v10.10 Yosemite";
         public const string MacOS10_11 = "OS X v10.11 El Capitan";
         public const string MacOS10_12 = "macOS v10.12 Sierra";
+        public const string MacOS10_13 = "macOS v10.13 High Sierra";
+        public const string MacOS10_14 = "macOS v10.14 Mojave";
+        public const string MacOS10_15 = "macOS v10.15 Catalina";
         public const string MacOS = "Mac OS";
 
         public const string ChromeOS = "Chrome OS";
