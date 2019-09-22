@@ -1,12 +1,12 @@
 # DetectionCore
 ![](https://meilcli.visualstudio.com/_apis/public/build/definitions/aa83b402-b78d-4038-a10b-93b8509336e0/2/badge) [![NuGet version](https://badge.fury.io/nu/DetectionCore.svg)](https://www.nuget.org/packages/DetectionCore)  
-A browser detect library for .NET Core(.NET Standard Library1.6)
+A browser detect library for .NET Standard 2.0.
 
 ## Detect
 
 ### Browser
-- IE(each version, over IE8)
-- Edge
+- Internet Explorer
+- Microsoft Edge
 - Chrome
 - Firefox
 - Safari
@@ -14,7 +14,7 @@ A browser detect library for .NET Core(.NET Standard Library1.6)
 
 ### Platform
 - Windows(each consumer version, over WindowsXP)
-- MacOS(each version,over Mac OS X v10.5)
+- MacOS(each version, over Mac OS X v10.5)
 - Chrome OS
 - Ubuntu
 - Mint Linux
@@ -27,8 +27,8 @@ A browser detect library for .NET Core(.NET Standard Library1.6)
 - PlayStation 2
 - PlayStation 3
 - PlayStation 4
-- iOS(each version,over iOS7.0)
-- Android(each version,over Android4.0)
+- iOS
+- Android
 
 ## NuGet
 
@@ -39,15 +39,11 @@ Install-Package DetectionCore
 ~~~
 
 ## Usage
-~~~
-using DetectionCore;
-
-string userAgent = "~~~~";
-
-string browser = userAgent.Browser();
-string platform = userAgent.Platform();
-~~~
+ToDo
 
 ## License
 
-This library is under MIT License
+This library is under MIT License.
+
+### Using
+- [System.Memory](https://www.nuget.org/packages/System.Memory/), published by [MIT License](https://github.com/dotnet/corefx/blob/master/LICENSE.TXT)
