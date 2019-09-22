@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace DetectionCore {
-    public class Platform {
-
+﻿namespace DetectionCore
+{
+    public class Platform
+    {
         public const string WindowsXP = "Windows XP";
         public const string WindowsVista = "Windows Vista";
         public const string Windows7 = "Windows 7";

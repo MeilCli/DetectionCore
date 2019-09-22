@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace DetectionCore {
-    public class Browser {
-
+﻿namespace DetectionCore
+{
+    public class Browser
+    {
         public const string IE8 = "Internet Explore 8";
         public const string IE9 = "Internet Explore 9";
         public const string IE10 = "Internet Explore 10";
