@@ -12,4 +12,8 @@
     <Description>A browser detection library for .NET Core</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.3" />
+  </ItemGroup>
+
 </Project>
