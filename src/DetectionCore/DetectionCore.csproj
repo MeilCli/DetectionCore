@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>DetectionCore</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2.0.0</Version>
+    <Authors>meilcli</Authors>
+    <PackageProjectUrl>https://github.com/MeilCli/DetectionCore</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/MeilCli/DetectionCore/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageTags>BrowserDetection</PackageTags>
+    <Description>A browser detection library for .NET Core</Description>
+  </PropertyGroup>
+
+</Project>
