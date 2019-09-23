@@ -11,6 +11,7 @@ A browser detect library for .NET Standard 2.0.
 - Firefox
 - Safari
 - Opera
+- NintendoBrowser
 
 ### Platform
 - Windows(each consumer version, over WindowsXP)
@@ -24,11 +25,16 @@ A browser detect library for .NET Standard 2.0.
 - OpenBSD
 - NetBSD
 - Nintendo Wii
+- Nintendo WiiU
+- Nintendo Switch
+- Nintendo 3DS
 - PlayStation 2
 - PlayStation 3
 - PlayStation 4
+- PlayStation Vita
 - iOS
 - Android
+- Windows Phone
 
 ## NuGet
 
