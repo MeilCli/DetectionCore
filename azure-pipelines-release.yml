@@ -18,9 +18,12 @@ steps:
     includePreviewVersions: true
 - task: DotNetCoreCLI@2
   inputs:
+    command: 'build'
+    arguments: '--configuration $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  inputs:
     command: pack
-    projects: 'DetectionCore/DetectionCore.csproj'
-    configuration: '$(buildConfiguration)'
+    configurationToPack: '$(buildConfiguration)'
     versioningScheme: 'byEnvVar'
     versionEnvVar: 'Build.SourceBranchName'
 # cannot use DotNetCoreCLI@2 command, because its command cannot use encrypted API Key
