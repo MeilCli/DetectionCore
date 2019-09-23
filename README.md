@@ -62,6 +62,11 @@ if (userAgent.TryDetectPlatform(out PlatformType platformType, out string? platf
 }
 ```
 
+## Develop Environment
+- C# 8.0
+- Visual Studio 2019 Preview
+- .NET Core 2.2 and 3.0
+
 ## License
 
 This library is under MIT License.
