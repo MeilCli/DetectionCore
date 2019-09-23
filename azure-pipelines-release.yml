@@ -18,6 +18,11 @@ steps:
     includePreviewVersions: true
 - task: DotNetCoreCLI@2
   inputs:
+    command: build
+    projects: 'DetectionCore/*.csproj'
+    configuration: '$(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  inputs:
     command: pack
     projects: 'DetectionCore/*.csproj'
     configuration: '$(buildConfiguration)'
