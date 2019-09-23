@@ -435,6 +435,13 @@ namespace DetectionCore.Test
             PlatformType.PlayStation4,
             PlatformConstant.PlayStation4
         )]
+        [DataRow(
+            "Mozilla/5.0 (PlayStation Vita 3.55) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2",
+            BrowserType.Unknown,
+            null,
+            PlatformType.PlayStationVita,
+            PlatformConstant.PlayStationVita
+        )]
 
         /* 
          * iOS 

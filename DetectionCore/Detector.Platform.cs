@@ -241,6 +241,12 @@ namespace DetectionCore
                 platformDetail = PlatformConstant.PlayStation4;
                 return true;
             }
+            if (userAgent.Contains("PlayStation Vita"))
+            {
+                platformType = PlatformType.PlayStationVita;
+                platformDetail = PlatformConstant.PlayStationVita;
+                return true;
+            }
 
             platformType = default;
             platformDetail = default;

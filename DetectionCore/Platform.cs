@@ -21,6 +21,7 @@
         PlayStation2,
         PlayStation3,
         PlayStation4,
+        PlayStationVita,
         iOS,
         Android
     }
@@ -65,6 +66,7 @@
         public const string PlayStation2 = "PlayStation 2";
         public const string PlayStation3 = "PlayStation 3";
         public const string PlayStation4 = "PlayStation 4";
+        public const string PlayStationVita = "PlayStation Vita";
 
         public const string iOS = "iOS";
         public const string Android = "Android";
