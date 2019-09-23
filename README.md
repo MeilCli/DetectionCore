@@ -1,5 +1,5 @@
 # DetectionCore
-![](https://meilcli.visualstudio.com/_apis/public/build/definitions/aa83b402-b78d-4038-a10b-93b8509336e0/2/badge) [![NuGet version](https://badge.fury.io/nu/DetectionCore.svg)](https://www.nuget.org/packages/DetectionCore)  
+[![Build Status](https://meilcli.visualstudio.com/DetectionCore/_apis/build/status/MeilCli.DetectionCore?branchName=master)](https://meilcli.visualstudio.com/DetectionCore/_build/latest?definitionId=20&branchName=master) [![NuGet version](https://badge.fury.io/nu/DetectionCore.svg)](https://www.nuget.org/packages/DetectionCore)  
 A browser detect library for .NET Standard 2.0.
 
 ## NuGet
