@@ -29,6 +29,10 @@
             {
                 return true;
             }
+            if (userAgent.tryDetectNintendoBrowser(out browserType, out version))
+            {
+                return true;
+            }
 
             browserType = default;
             version = default;
@@ -139,6 +143,20 @@
             {
                 browserType = BrowserType.Opera;
                 userAgent.searchBrowserVersion("OPR/", 5, out version);
+                return true;
+            }
+
+            browserType = default;
+            version = default;
+            return false;
+        }
+
+        private static bool tryDetectNintendoBrowser(this string userAgent, out BrowserType browserType, out int? version)
+        {
+            if (userAgent.Contains("NintendoBrowser/"))
+            {
+                browserType = BrowserType.NintendoBrowser;
+                userAgent.searchBrowserVersion("NintendoBrowser/", 5, out version);
                 return true;
             }
 

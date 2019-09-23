@@ -387,6 +387,34 @@ namespace DetectionCore.Test
             PlatformConstant.Wii
         )]
         [DataRow(
+            "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.14 NintendoBrowser/3.1.1.9577.JP",
+            BrowserType.NintendoBrowser,
+            3,
+            PlatformType.WiiU,
+            PlatformConstant.WiiU
+        )]
+        [DataRow(
+            "Mozilla/5.0 (Nintendo Switch; ShareApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.5.9 NintendoBrowser/5.1.0.13341",
+            BrowserType.NintendoBrowser,
+            5,
+            PlatformType.Switch,
+            PlatformConstant.Switch
+        )]
+        [DataRow(
+            "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.20 Mobile NintendoBrowser/1.8.10156.JP",
+            BrowserType.NintendoBrowser,
+            1,
+            PlatformType.Nintendo3DS,
+            PlatformConstant.Nintendo3DS
+        )]
+        [DataRow(
+            "Mozilla/5.0 (Nintendo 3DS; U; ; ja) Version/1.7630.JP",
+            BrowserType.Unknown,
+            null,
+            PlatformType.Nintendo3DS,
+            PlatformConstant.Nintendo3DS
+        )]
+        [DataRow(
             "Mozilla/4.0 (PS2; PlayStation BB Navigator 1.0) NetFront/3.0",
             BrowserType.Unknown,
             null,

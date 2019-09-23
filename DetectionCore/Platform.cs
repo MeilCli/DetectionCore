@@ -15,6 +15,9 @@
         NetBSD,
         Linux,
         Wii,
+        WiiU,
+        Switch,
+        Nintendo3DS,
         PlayStation2,
         PlayStation3,
         PlayStation4,
@@ -56,6 +59,9 @@
         public const string Linux = "Linux";
 
         public const string Wii = "Nintendo Wii";
+        public const string WiiU = "Nintendo WiiU";
+        public const string Switch = "Nintendo Switch";
+        public const string Nintendo3DS = "Nintendo 3DS";
         public const string PlayStation2 = "PlayStation 2";
         public const string PlayStation3 = "PlayStation 3";
         public const string PlayStation4 = "PlayStation 4";

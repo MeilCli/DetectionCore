@@ -199,10 +199,28 @@ namespace DetectionCore
 
         private static bool tryDetectGame(this string userAgent, out PlatformType platformType, [NotNullWhen(true)] out string? platformDetail)
         {
+            if (userAgent.Contains("Nintendo WiiU"))
+            {
+                platformType = PlatformType.WiiU;
+                platformDetail = PlatformConstant.WiiU;
+                return true;
+            }
             if (userAgent.Contains("Nintendo Wii"))
             {
                 platformType = PlatformType.Wii;
                 platformDetail = PlatformConstant.Wii;
+                return true;
+            }
+            if (userAgent.Contains("Nintendo Switch"))
+            {
+                platformType = PlatformType.Switch;
+                platformDetail = PlatformConstant.Switch;
+                return true;
+            }
+            if (userAgent.Contains("Nintendo 3DS"))
+            {
+                platformType = PlatformType.Nintendo3DS;
+                platformDetail = PlatformConstant.Nintendo3DS;
                 return true;
             }
             if (userAgent.Contains("PS2"))

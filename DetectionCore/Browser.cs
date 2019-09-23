@@ -8,7 +8,8 @@
         Chrome,
         FireFox,
         Safari,
-        Opera
+        Opera,
+        NintendoBrowser
     }
 
     public static class BrowserConstant
@@ -19,6 +20,7 @@
         public const string FireFox = "FireFox";
         public const string Safari = "Safari";
         public const string Opera = "Opera";
+        public const string NintendoBrowser = "NintendoBrowser";
         public const string Unknown = "Unknown";
     }
 
@@ -34,6 +36,7 @@
                 BrowserType.FireFox => BrowserConstant.FireFox,
                 BrowserType.Safari => BrowserConstant.Safari,
                 BrowserType.Opera => BrowserConstant.Opera,
+                BrowserType.NintendoBrowser => BrowserConstant.NintendoBrowser,
                 _ => BrowserConstant.Unknown
             };
         }
