@@ -1,7 +1,29 @@
-﻿namespace DetectionCore
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace DetectionCore
 {
     public static partial class Detector
     {
+        public static bool TryDetectBrowser(this string userAgent, out BrowserType browserType, [NotNullWhen(true)] out string? browserDetail)
+        {
+            if (userAgent.TryDetectBrowser(out browserType, out int? version))
+            {
+                if (version is int nonNullVersion)
+                {
+                    browserDetail = $"{browserType.ToName()} {nonNullVersion}";
+                }
+                else
+                {
+                    browserDetail = browserType.ToName();
+                }
+                return true;
+            }
+
+            browserType = default;
+            browserDetail = default;
+            return false;
+        }
+
         public static bool TryDetectBrowser(this string userAgent, out BrowserType browserType, out int? version)
         {
             if (userAgent.tryDetectInternetExplore(out browserType, out version))

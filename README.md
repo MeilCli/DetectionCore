@@ -2,6 +2,14 @@
 ![](https://meilcli.visualstudio.com/_apis/public/build/definitions/aa83b402-b78d-4038-a10b-93b8509336e0/2/badge) [![NuGet version](https://badge.fury.io/nu/DetectionCore.svg)](https://www.nuget.org/packages/DetectionCore)  
 A browser detect library for .NET Standard 2.0.
 
+## NuGet
+
+[NuGet URL](https://www.nuget.org/packages/DetectionCore/)
+
+~~~
+Install-Package DetectionCore
+~~~
+
 ## Detect
 
 ### Browser
@@ -12,6 +20,15 @@ A browser detect library for .NET Standard 2.0.
 - Safari
 - Opera
 - NintendoBrowser
+
+```csharp
+string userAgent = "mozilla/5.0 (Linux; Android 6.0.1; Nexus 5x build/mtc19t applewebkit/537.36 (KHTML, like Gecko) Chrome/51.0.2702.81 Mobile Safari/537.36";
+if (userAgent.TryDetectBrowser(out BrowserType browserType, out string? browserDetail))
+{
+    Console.WriteLine($"BrowserType: {Enum.GetName(typeof(BrowserType), browserType)}"); // BrowserType: Chrome
+    Console.WriteLine($"Browser: {browserDetail}"); // Browser: Chrome 51
+}
+```
 
 ### Platform
 - Windows(each consumer version, over WindowsXP)
@@ -36,16 +53,14 @@ A browser detect library for .NET Standard 2.0.
 - Android
 - Windows Phone
 
-## NuGet
-
-[NuGet URL](https://www.nuget.org/packages/DetectionCore/)
-
-~~~
-Install-Package DetectionCore
-~~~
-
-## Usage
-ToDo
+```csharp
+string userAgent = "mozilla/5.0 (Linux; Android 6.0.1; Nexus 5x build/mtc19t applewebkit/537.36 (KHTML, like Gecko) Chrome/51.0.2702.81 Mobile Safari/537.36";
+if (userAgent.TryDetectPlatform(out PlatformType platformType, out string? platformDetail))
+{
+    Console.WriteLine($"PlatformType: {Enum.GetName(typeof(PlatformType), platformType)}"); // PlatformType: Android
+    Console.WriteLine($"Platform: {platformDetail}"); // Android 6.0.1
+}
+```
 
 ## License
 
