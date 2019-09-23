@@ -1,0 +1,27 @@
+trigger:
+  - master
+
+pr:
+  - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+# for test executing
+- task: UseDotNet@2
+  inputs:
+    version: 2.2.x
+# for build C# 8.0
+- task: UseDotNet@2
+  inputs:
+    version: 3.x
+    includePreviewVersions: true
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    publishTestResults: true
+    configuration: '$(buildConfiguration)'
