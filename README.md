@@ -62,6 +62,11 @@ if (userAgent.TryDetectPlatform(out PlatformType platformType, out string? platf
 }
 ```
 
+## Request Newer Detection
+[@MeilCli](https://github.com/MeilCli) don't regularly use this library, but would like to add a new detection if requested.
+
+[Create Issue from Template](https://github.com/MeilCli/DetectionCore/issues/new/choose)
+
 ## Develop Environment
 - C# 8.0
 - Visual Studio 2019 Preview
