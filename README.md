@@ -72,6 +72,8 @@ if (userAgent.TryDetectPlatform(out PlatformType platformType, out string? platf
 - Visual Studio 2019 Preview
 - .NET Core 2.2 and 3.0
 
+[See Contributing Document](.github/CONTRIBUTING.md)
+
 ## License
 
 This library is under MIT License.
