@@ -4,7 +4,7 @@ A browser detect library for .NET Standard 2.0.
 
 ## NuGet
 
-[NuGet URL](https://www.nuget.org/packages/DetectionCore/)
+[NuGet](https://www.nuget.org/packages/DetectionCore/)
 
 ~~~
 Install-Package DetectionCore
