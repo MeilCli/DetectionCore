@@ -87,15 +87,15 @@ namespace DetectionCore.Test
             "Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; ; DG-W10M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586",
             BrowserType.Edge,
             13,
-            PlatformType.Windows,
-            PlatformConstant.Windows
+            PlatformType.WindowsPhone,
+            "Windows Phone 10.0"
         )]
         [DataRow(
             "Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; Lumia 640 LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Mobile Safari/537.36 Edge/14.14393",
             BrowserType.Edge,
             14,
-            PlatformType.Windows,
-            PlatformConstant.Windows
+            PlatformType.WindowsPhone,
+            "Windows Phone 10.0"
         )]
 
         /* 
@@ -505,6 +505,31 @@ namespace DetectionCore.Test
             51,
             PlatformType.Android,
             "Android 6.0.1"
+        )]
+
+        /* 
+         * Windows Phone 
+         */
+        [DataRow(
+            "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; FujitsuToshibaMobileCommun; IS12T; KDDI)",
+            BrowserType.InternetExplorer,
+            9,
+            PlatformType.WindowsPhone,
+            "Windows Phone 7.5"
+        )]
+        [DataRow(
+            "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 920)",
+            BrowserType.InternetExplorer,
+            10,
+            PlatformType.WindowsPhone,
+            "Windows Phone 8.0"
+        )]
+        [DataRow(
+            "Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; ; DG-W10M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586",
+            BrowserType.Edge,
+            13,
+            PlatformType.WindowsPhone,
+            "Windows Phone 10.0"
         )]
         public void Test(string userAgent, BrowserType browserType, int? browserVersion, PlatformType platformType, string? platformDetail)
         {

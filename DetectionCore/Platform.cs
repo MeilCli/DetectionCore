@@ -23,7 +23,8 @@
         PlayStation4,
         PlayStationVita,
         iOS,
-        Android
+        Android,
+        WindowsPhone
     }
 
     public static class PlatformConstant
@@ -34,6 +35,7 @@
         public const string Windows8 = "Windows 8";
         public const string Windows8_1 = "Windows 8.1";
         public const string Windows10 = "Windows 10";
+        public const string WindowsPhone = "Windows Phone";
         public const string Windows = "Windows";
 
         public const string MacOS10_5 = "Mac OS X v10.5 Leopard";

@@ -38,6 +38,21 @@ namespace DetectionCore
 
         private static bool tryDetectWindows(this string userAgent, out PlatformType platformType, [NotNullWhen(true)] out string? platformDetail)
         {
+            if (userAgent.Contains("Windows Phone"))
+            {
+                platformType = PlatformType.WindowsPhone;
+
+                if (userAgent.searchPlatformVersion("Windows Phone", 8, out string? foundVersion))
+                {
+                    platformDetail = $"{PlatformConstant.WindowsPhone} {foundVersion}";
+                }
+                else
+                {
+                    platformDetail = PlatformConstant.WindowsPhone;
+                }
+
+                return true;
+            }
             if (userAgent.Contains("Windows"))
             {
                 platformType = PlatformType.Windows;
