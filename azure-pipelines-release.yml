@@ -1,0 +1,33 @@
+trigger:
+  tags:
+    include:
+      - '*'
+
+pr: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    version: 3.x
+    includePreviewVersions: true
+- task: DotNetCoreCLI@2
+  inputs:
+    command: pack
+    projects: 'DetectionCore/*.csproj'
+    configuration: '$(buildConfiguration)'
+    versioningScheme: 'byEnvVar'
+    versionEnvVar: 'Build.SourceBranchName'
+    outputDir: '$(Build.ArtifactStagingDirectory)'
+# cannot use DotNetCoreCLI@2 command, because its command cannot use encrypted API Key
+- task: NuGetCommand@2
+  inputs:
+    command: push
+    searchPatternPush: '$(Build.ArtifactStagingDirectory)/DetectionCore.*.nupkg'
+    nuGetFeedType: 'external'
+    externalEndPoint: 'nugetConnection'
