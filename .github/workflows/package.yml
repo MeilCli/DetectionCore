@@ -2,8 +2,7 @@ name: Check Package
 
 on: 
   schedule:
-    #- cron: '0 8 * * 5' # every friday AM 8:00
-    - cron: '25 * * * *'
+    - cron: '0 8 * * 5' # every friday AM 8:00
 jobs:
   nuget:
     runs-on: ubuntu-latest
