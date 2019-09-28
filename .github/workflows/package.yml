@@ -3,9 +3,9 @@ name: Check Package
 on: 
   schedule:
     #- cron: '0 8 * * 5' # every friday AM 8:00
-    - cron: '22 * * * *'
+    - cron: '25 * * * *'
 jobs:
-  npm:
+  nuget:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
